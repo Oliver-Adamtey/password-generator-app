@@ -1,7 +1,7 @@
  .title{
     font-size: 20px;
     text-align: center;
-    margin: 30px;
+    /* margin: 30px; */
     color: #817D92;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .container {
-    height: 443px;
+    /* height: 443px; */
     padding: 20px;
     background:  #24232c;
 }
@@ -127,11 +127,13 @@
   /* CSS for mobiles */
 
   @media (max-width: 430px){
-    .result-container {
+    .result-container{
       width: calc(100% - 100px); 
-      margin: 20px;
       margin-left: auto;
       margin-right: auto;
+    }
+    .result-field{
+        margin: 20px;
     }
     .container{
         width: calc(100% - 80px); 
