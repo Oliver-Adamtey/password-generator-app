@@ -6,6 +6,7 @@
   }
   
   body {
+    font-family: ; 
     background: #18171F;
     color: #E6E5EA;
     display: flex;
@@ -13,6 +14,3 @@
     align-items: center;
     height: 100vh;
   }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
