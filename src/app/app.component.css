@@ -126,9 +126,9 @@
   
   /* CSS for mobiles */
 
-  @media (max-width: 430px){
+  @media (max-width: 530px){
     .result-container{
-      width: calc(100% - 100px); 
+      width: 90%; 
       margin-left: auto;
       margin-right: auto;
     }
