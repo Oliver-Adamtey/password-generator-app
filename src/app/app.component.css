@@ -17,12 +17,16 @@
 }
 
 .generate-field{
+    margin-top: 6px;
     color: #817D92;
 }
 .btn-copy{
+    background: none;
+    position: relative;
+    font-size: 1px;
     cursor: pointer;
+    color:#a4ffaf;
 }
-
 
 .container {
     padding: 20px;
@@ -67,6 +71,10 @@ input {
     background-color: #a4ffaf;
     border: none;
     cursor: pointer;
+}
+.arrow-right{
+    font-size: 15px;
+    position: absolute;
 }
 
 .btn-generate-pss:hover{
