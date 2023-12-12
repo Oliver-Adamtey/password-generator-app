@@ -107,14 +107,14 @@
 
 /* CSS for tablets */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .result-field {
       width: 80%;
     }
     .settings-container{
         width: 80%;
     }
-  }
+  } */
   
   /* CSS for laptops */
 
@@ -126,12 +126,18 @@
   
   /* CSS for mobiles */
 
-  /* @media (max-width: 725px) {
+  @media (max-width: 430px){
     .result-container {
-      width: 320px; 
+      width: calc(100% - 100px); 
+      margin: 20px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .container{
-        width: 60%;
+        width: calc(100% - 80px); 
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
   }
-   */
+  
