@@ -1,0 +1,78 @@
+ .title{
+    font-size: 15px;
+    text-align: center;
+    margin: 8px;
+    color: #817D92;
+}
+
+.result-container {
+    /* width: 500px; */
+    background:  #24232c;
+}
+.result-field{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.generate-field{
+    color: #817D92;
+}
+.btn-copy{
+    cursor: pointer;
+}
+
+
+.container {
+    padding: 20px;
+    background:  #24232c;
+}
+
+.lenght-range{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.password-range input{
+    width: 100%;
+}
+
+input {
+    margin: 7px;
+}
+
+
+.setting {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.btn-strenght{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12px;
+    width: 100%;
+    height: 30px;
+    background-color: #18171F;
+    border: none;
+    margin: 15px 15px 15px 0;
+}
+
+.btn-generate-pss{
+    width: 100%;
+    height: 30px;
+    background-color: #a4ffaf;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-generate-pss:hover{
+    background-color: #24232c;
+    color: #a4ffaf;
+    border: 1px #a4ffaf solid;
+}
+
+
