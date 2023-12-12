@@ -126,10 +126,10 @@
   
   /* CSS for mobiles */
   @media (max-width: 725px) {
-    .result-field {
+    .result-container {
       width: 320px; 
     }
-    .container{
+    .settings-container.container{
         width: 320px;
     }
   }
