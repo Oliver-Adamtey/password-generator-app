@@ -129,8 +129,8 @@
     .result-container {
       width: 320px; 
     }
-    .settings-container.container{
-        width: 320px;
+    .container{
+        width: 60%;
     }
   }
   
