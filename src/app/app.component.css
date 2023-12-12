@@ -59,7 +59,7 @@
 
 .btn-strength{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 12px;
     width: 100%;
     height: 72px;
@@ -70,9 +70,12 @@
 
 .btn-strength p{
     padding: 20px;
+    font-size: 24px;
 }
 .btn-strength .gray-color{
+    padding: 23px;
     color: #817D92;
+    font-size: 18PX;
 }
 
 .btn-generate-pss{
