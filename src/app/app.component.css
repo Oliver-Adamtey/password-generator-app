@@ -6,7 +6,7 @@
 }
 
 .result-container {
-    /* width: 500px; */
+    width: 500px;
     background:  #24232c;
 }
 .result-field{
@@ -29,7 +29,6 @@
 }
 
 .container {
-    width: 540;
     height: 443px;
     padding: 20px;
     background:  #24232c;
@@ -43,13 +42,15 @@
     font-size: 18px;
 }
 
+.password-range{
 
+}
 .password-range input{
     width: 100%;
 }
 
-input {
-    margin: 7px;
+.settings-container input {
+    margin: 15px;
 }
 
 
