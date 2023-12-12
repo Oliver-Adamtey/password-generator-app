@@ -12,6 +12,7 @@
 .result-field{
     display: flex;
     justify-content: space-between;
+    font-size: 32px;
     margin: 10px;
     padding: 10px;
 }
@@ -23,12 +24,13 @@
 .btn-copy{
     background: none;
     position: relative;
-    font-size: 1px;
     cursor: pointer;
     color:#a4ffaf;
 }
 
 .container {
+    width: 540;
+    height: 443px;
     padding: 20px;
     background:  #24232c;
 }

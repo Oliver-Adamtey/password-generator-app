@@ -6,6 +6,7 @@
   }
   
   body {
+    font-family: 'JetBrains Mono', monospace;
     background: #18171F;
     color: #E6E5EA;
     display: flex;
