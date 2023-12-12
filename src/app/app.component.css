@@ -27,6 +27,9 @@
     cursor: pointer;
     color:#a4ffaf;
 }
+.btn-copy:hover{
+    color: white;
+}
 
 .container {
     height: 443px;
