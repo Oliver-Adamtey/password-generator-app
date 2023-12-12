@@ -43,6 +43,7 @@
 }
 .length-title{
     font-size: 18px;
+    color: #E6E5EA;
 }
 
 .password-range input{
@@ -57,6 +58,7 @@
 .setting {
     position: relative;
     cursor: pointer;
+    color: #E6E5EA;
 }
 
 
@@ -71,6 +73,7 @@
 }
 
 .btn-strength p{
+    color: #E6E5EA;
     padding: 20px;
     font-size: 24px;
 }
