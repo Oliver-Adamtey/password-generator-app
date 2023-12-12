@@ -6,7 +6,6 @@
   }
   
   body {
-    font-family: ; 
     background: #18171F;
     color: #E6E5EA;
     display: flex;
@@ -14,3 +13,11 @@
     align-items: center;
     height: 100vh;
   }
+
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono-Bold.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: normal;
+  }
+  
