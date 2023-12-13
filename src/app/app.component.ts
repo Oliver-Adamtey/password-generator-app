@@ -9,6 +9,13 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'password-generator-app';
+  password= ""
+  length= 0;
+  useUppercaseLetters =false;
+  useLowercaseLetters =false;
+  useNumbers =false;
+  useSymbols =false;
 }
