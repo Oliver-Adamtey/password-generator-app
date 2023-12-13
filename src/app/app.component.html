@@ -37,7 +37,7 @@
 
       <div class="settings-container">
         <div class="setting">
-            <input type="checkbox" id="uppercase" (input)="onChangeUseUppercaseLetters()"/>
+            <input type="checkbox" id="uppercase" [(ngModel)]="useUppercaseLetters" (input)="onChangeUseUppercaseLetters()"/>
             <label for="uppercase">Include Uppercase Letters</label>
         </div>
         <div class="setting">
