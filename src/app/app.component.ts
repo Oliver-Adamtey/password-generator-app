@@ -13,12 +13,33 @@ import { MatIconModule } from '@angular/material/icon';
 export class AppComponent {
 
   title = 'password-generator-app';
+
   password= ""
   length= 0;
   useUppercaseLetters =false;
   useLowercaseLetters =false;
   useNumbers =false;
   useSymbols =false;
+
+  onChangeLength(event:Event){
+    this.length= parseInt((event.target as HTMLInputElement).value)
+  }
+
+  onChangeUseUppercaseLetters(){
+    this.useUppercaseLetters= !this.useUppercaseLetters
+  }
+
+  onChangeUseLowercaseLetters(){
+    this.useLowercaseLetters= !this.useLowercaseLetters
+  }
+
+  onChangeUseNumbers(){
+    this.useNumbers= !this.useNumbers
+  }
+
+  onChangeUseSymbols(){
+    this.useSymbols= !this.useSymbols
+  }
 
   generatePassword() {
     const numbers = '1234567890';
