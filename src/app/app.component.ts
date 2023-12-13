@@ -51,12 +51,13 @@ export class AppComponent {
       // Check if none of the checkboxes are selected
       if (!(this.useUppercaseLetters || this.useLowercaseLetters || this.useNumbers || this.useSymbols)) {
         console.log("Please select at least one option"); // Display a message
+        this.password = ""; // Clear password field
         return; // Exit function without generating a password
       }
   
       let validChars =''
       if (this.useUppercaseLetters) {
-        validChars+= uppercaseletters;
+        validChars += uppercaseletters;
       }
       if (this.useLowercaseLetters) {
         validChars+= lowercaseletters;

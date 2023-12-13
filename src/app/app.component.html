@@ -37,15 +37,15 @@
 
       <div class="settings-container">
         <div class="setting">
-            <input type="checkbox" id="uppercase" [(ngModel)]="useUppercaseLetters" (input)="onChangeUseUppercaseLetters()"/>
+            <input type="checkbox" id="uppercase" [(ngModel)]="useUppercaseLetters" (change)="onChangeUseUppercaseLetters()"/>
             <label for="uppercase">Include Uppercase Letters</label>
         </div>
         <div class="setting">
-            <input type="checkbox" id="lowercase" (input)="onChangeUseLowercaseLetters()" />
+            <input type="checkbox" id="lowercase" (change)="onChangeUseLowercaseLetters()" />
             <label for="lowercase">Include Lowercase Letters</label>
         </div>
         <div class="setting">
-            <input type="checkbox" id="number" (input)="onChangeUseNumbers()" />
+            <input type="checkbox" id="number" (change)="onChangeUseNumbers()" />
             <label for="number">Include Numbers</label>
         </div>
         <div class="setting">
