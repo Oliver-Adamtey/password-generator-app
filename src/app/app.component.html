@@ -36,11 +36,11 @@
 
       <div class="settings-container">
         <div class="setting">
-            <input type="checkbox" id="uppercase" checked/>
+            <input type="checkbox" id="uppercase" (input)="onChangeUseUppercaseLetters()" checked/>
             <label for="uppercase">Include Uppercase Letters</label>
         </div>
         <div class="setting">
-            <input type="checkbox" id="lowercase" checked />
+            <input type="checkbox" id="lowercase" (input)="onChangeUseLowercaseLetters()" checked />
             <label for="lowercase">Include Lowercase Letters</label>
         </div>
         <div class="setting">

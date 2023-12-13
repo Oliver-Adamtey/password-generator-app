@@ -42,16 +42,17 @@ export class AppComponent {
   }
 
   generatePassword() {
+      const uppercaseletters = 'ABCDEFGHIJKLMNOPQRSTUVWYZ';
+      const lowercaseletters = 'abcdefghijklmnopqrstuvwyz';
       const numbers = '1234567890';
-      const letters = 'ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwyz';
       const symbols = '!@#$%^&*()-_?¡';
   
       let validChars =''
       if (this.useUppercaseLetters) {
-        validChars+= letters
+        validChars+= uppercaseletters
       }
       if (this.useLowercaseLetters) {
-        validChars+= letters
+        validChars+= lowercaseletters
       }
       if (this.useNumbers) {
         validChars+= numbers
