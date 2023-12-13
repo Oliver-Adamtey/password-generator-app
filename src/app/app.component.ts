@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 })
 
 export class AppComponent {
+
   title = 'password-generator-app';
   password= ""
   length= 0;
@@ -18,4 +19,30 @@ export class AppComponent {
   useLowercaseLetters =false;
   useNumbers =false;
   useSymbols =false;
+
+  generatePassword() {
+    const numbers = '1234567890';
+      const letters = 'ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwyz';
+      const symbols = '!@#$%^&*()-_?¡';
+  
+      let validChars =''
+      if (this.useUppercaseLetters) {
+        validChars+= letters
+      }
+      if (this.useLowercaseLetters) {
+        validChars+= letters
+      }
+      if (this.useNumbers) {
+        validChars+= numbers
+      }
+      if (this.useSymbols) {
+        validChars+= symbols
+      }
+      let generatedPassword =""
+      for (let i = 0; i < this.length; i++) {
+        const index = Math.floor(Math.random() * validChars.length)
+        generatedPassword+= validChars[index]
+      }
+      this.password=generatedPassword
+  }
 }
