@@ -11,16 +11,19 @@
 .result-field{
     display: flex;
     justify-content: space-between;
-    font-size: 32px;
     margin: 20px;
     padding: 10px;
 }
 
-.generate-field{
-    margin-top: 6px;
+.result-field input{
+    font-size: 30px;
+    background: none;
+    border: none;
+    /* margin-top: 6px; */
     color: #817D92;
 }
 .btn-copy{
+    margin-top: 6px;
     background: none;
     position: relative;
     cursor: pointer;
