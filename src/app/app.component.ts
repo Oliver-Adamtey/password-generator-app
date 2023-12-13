@@ -15,7 +15,7 @@ export class AppComponent {
   title = 'password-generator-app';
 
   password= ""
-  length= 0;
+  length= 5;
   useUppercaseLetters =false;
   useLowercaseLetters =false;
   useNumbers =false;
@@ -42,7 +42,7 @@ export class AppComponent {
   }
 
   generatePassword() {
-    const numbers = '1234567890';
+      const numbers = '1234567890';
       const letters = 'ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwyz';
       const symbols = '!@#$%^&*()-_?¡';
   
