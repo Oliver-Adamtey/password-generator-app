@@ -1,7 +1,6 @@
  .title{
     font-size: 20px;
     text-align: center;
-    /* margin: 30px; */
     color: #817D92;
 }
 
@@ -56,6 +55,7 @@
 
 
 .setting {
+    height: 32px;
     position: relative;
     cursor: pointer;
     color: #E6E5EA;
@@ -107,39 +107,139 @@
 
 /* CSS for tablets */
 
-/* @media (min-width: 768px) {
-    .result-field {
-      width: 80%;
+@media (min-width: 768px) {
+    .title{
+        /* padding-top: 60px; */
+        font-size: 18px;
     }
-    .settings-container{
-        width: 80%;
-    }
-  } */
-  
-  /* CSS for laptops */
-
-  /* @media (min-width: 1024px) and (max-width: 1439px) {
-    .result-container {
-      width: 70%; 
-    }
-  } */
-  
-  /* CSS for mobiles */
-
-  @media (max-width: 530px){
     .result-container{
-      width: 90%; 
+      width: 100%; 
       margin-left: auto;
       margin-right: auto;
     }
     .result-field{
         margin: 20px;
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
     }
     .container{
-        width: calc(100% - 80px); 
+        /* width: calc(100% - 80px);  */
         margin: 20px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .length-title{
+        font-size: 18px;
+    }
+    .btn-strength{
+        width: 100%;
+        height: 52px;
+        margin: 10px 10px 15px 0;
+    }
+    
+    .btn-strength p{
+        padding: 13px;
+        font-size: 18px;
+    }
+    .btn-strength .gray-color{
+        padding: 14px;
+        font-size: 18PX;
+    }
+    .btn-generate-pss{
+        height: 44px;
+    }
+  }
+  
+  /* CSS for laptops */
+
+  @media (min-width: 1024px) {
+    .title{
+        /* padding-top: 60px; */
+        font-size: 18px;
+    }
+    .result-container{
+      width: 100%; 
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .result-field{
+        margin: 20px;
+        font-size: 24px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .container{
+        /* width: calc(100% - 80px);  */
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .length-title{
+        font-size: 18px;
+    }
+    .btn-strength{
+        width: 100%;
+        height: 72px;
+        margin: 10px 10px 15px 0;
+    }
+    
+    .btn-strength p{
+        padding: 19px;
+        font-size: 23px;
+    }
+    .btn-strength .gray-color{
+        padding: 22px;
+        font-size: 18PX;
+    }
+    .btn-generate-pss{
+        height: 60px;
+    }
+  }
+  
+  /* CSS for mobiles */
+
+  @media (max-width: 530px){
+    .title{
+        /* padding-top: 60px; */
+        font-size: 14px;
+    }
+    .result-container{
+      width: 100%; 
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .result-field{
+        margin: 20px;
+        font-size: 18px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .container{
+        /* width: calc(100% - 80px);  */
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .length-title{
+        font-size: 14px;
+    }
+    .btn-strength{
+        width: 100%;
+        height: 42px;
+        margin: 10px 10px 15px 0;
+    }
+    
+    .btn-strength p{
+        padding: 12px;
+        font-size: 15px;
+    }
+    .btn-strength .gray-color{
+        padding: 13px;
+        font-size: 12PX;
+    }
+    .btn-generate-pss{
+        height: 39px;
     }
   }
   
