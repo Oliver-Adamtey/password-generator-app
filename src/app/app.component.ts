@@ -16,9 +16,9 @@ export class AppComponent {
 
   password= ""
   length= 8;
-  useUppercaseLetters =false;
-  useLowercaseLetters =false;
-  useNumbers =false;
+  useUppercaseLetters =true;
+  useLowercaseLetters =true;
+  useNumbers =true;
   useSymbols =false;
 
   onChangeLength(event:Event){
