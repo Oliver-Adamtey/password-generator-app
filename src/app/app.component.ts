@@ -46,6 +46,14 @@ export class AppComponent {
       const lowercaseletters = 'abcdefghijklmnopqrstuvwyz';
       const numbers = '1234567890';
       const symbols = '!@#$%^&*()-_?¡';
+
+        // Check if any of the criteria fail
+        if (!(this.length && (this.useUppercaseLetters || this.useLowercaseLetters || this.useNumbers || this.useSymbols))) {
+          // Handle the condition here, such as displaying an error message
+          console.log("Please select at least one option and provide a valid length");
+          // You can also return or exit the function if you want to prevent further execution
+          return;
+        }
   
       let validChars =''
       if (this.useUppercaseLetters) {
