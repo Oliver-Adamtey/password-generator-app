@@ -17,9 +17,9 @@ export class AppComponent {
 
   password= ""
   length= 8;
-  useUppercaseLetters =true;
-  useLowercaseLetters =true;
-  useNumbers =true;
+  useUppercaseLetters = false;
+  useLowercaseLetters = false;
+  useNumbers = false;
   useSymbols =false;
 
   onChangeLength(event:Event){
@@ -68,6 +68,14 @@ export class AppComponent {
       if (this.useSymbols) {
         validChars+= symbols;
       }
+
+      if (!validChars) {
+        console.log("Please select at least one option"); // Display a message if no checkbox is selected
+        this.password = ""; // Clear password field
+        return; // Exit function without generating a password
+      }  
+
+      
       let generatedPassword =""
       for (let i = 0; i < this.length; i++) {
         const index = Math.floor(Math.random() * validChars.length);
