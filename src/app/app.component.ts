@@ -48,32 +48,30 @@ export class AppComponent {
       const numbers = '1234567890';
       const symbols = '!@#$%^&*()-_?¡';
 
-        // Check if any of the criteria fail
-        if (!(this.length && (this.useUppercaseLetters || this.useLowercaseLetters || this.useNumbers || this.useSymbols))) {
-          // Handle the condition here, such as displaying an error message
-          console.log("Please select at least one option and provide a valid length");
-          // You can also return or exit the function if you want to prevent further execution
-          return;
-        }
+      // Check if none of the checkboxes are selected
+      if (!(this.useUppercaseLetters || this.useLowercaseLetters || this.useNumbers || this.useSymbols)) {
+        console.log("Please select at least one option"); // Display a message
+        return; // Exit function without generating a password
+      }
   
       let validChars =''
       if (this.useUppercaseLetters) {
-        validChars+= uppercaseletters
+        validChars+= uppercaseletters;
       }
       if (this.useLowercaseLetters) {
-        validChars+= lowercaseletters
+        validChars+= lowercaseletters;
       }
       if (this.useNumbers) {
-        validChars+= numbers
+        validChars+= numbers;
       }
       if (this.useSymbols) {
-        validChars+= symbols
+        validChars+= symbols;
       }
       let generatedPassword =""
       for (let i = 0; i < this.length; i++) {
-        const index = Math.floor(Math.random() * validChars.length)
-        generatedPassword+= validChars[index]
+        const index = Math.floor(Math.random() * validChars.length);
+        generatedPassword+= validChars[index];
       }
-      this.password=generatedPassword
+      this.password=generatedPassword;
   }
 }
