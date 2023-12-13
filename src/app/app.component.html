@@ -37,11 +37,11 @@
 
       <div class="settings-container">
         <div class="setting">
-            <input type="checkbox" id="uppercase" (input)="onChangeUseUppercaseLetters()" checked/>
+            <input type="checkbox" id="uppercase" (input)="onChangeUseUppercaseLetters()"/>
             <label for="uppercase">Include Uppercase Letters</label>
         </div>
         <div class="setting">
-            <input type="checkbox" id="lowercase" (input)="onChangeUseLowercaseLetters()" checked />
+            <input type="checkbox" id="lowercase" (input)="onChangeUseLowercaseLetters()" />
             <label for="lowercase">Include Lowercase Letters</label>
         </div>
         <div class="setting">
@@ -62,7 +62,7 @@
       <button 
         (click)="generatePassword()"
         class="btn-generate-pss" 
-        id="generate"
+        [disabled]="! (length && (useUppercaseLetters || useLowercaseLetters || useNumbers || useSymbols))"
         >GENERATE 
         <mat-icon class="arrow-right">arrow_forward</mat-icon> 
       </button>
