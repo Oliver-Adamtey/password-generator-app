@@ -42,9 +42,20 @@ export class AppComponent {
     this.useSymbols= !this.useSymbols
   }
 
+  password: string = '';
+  copied: boolean = false;
+
+  constructor(private clipboard: Clipboard) {}
 
   copyPassword() {
+    if (this.password){
+      this.clipboard.copy(this.password);
+      this.copied = true; 
 
+      setTimeout(() => {
+        this.copied = false;
+      }, 2000);
+    }
   }
 
   generatePassword() {
