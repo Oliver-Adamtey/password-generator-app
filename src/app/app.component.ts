@@ -42,6 +42,11 @@ export class AppComponent {
     this.useSymbols= !this.useSymbols
   }
 
+
+  copyPassword() {
+
+  }
+
   generatePassword() {
       const uppercaseletters = 'ABCDEFGHIJKLMNOPQRSTUVWYZ';
       const lowercaseletters = 'abcdefghijklmnopqrstuvwyz';
