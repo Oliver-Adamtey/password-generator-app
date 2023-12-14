@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 // import { FormsModule } from '@angular/forms';
+import {Clipboard} from '@angular/cdk/clipboard';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -42,14 +43,16 @@ export class AppComponent {
     this.useSymbols= !this.useSymbols
   }
 
-  password: string = '';
+// copy function
+
+  myPassword: string = '';
   copied: boolean = false;
 
   constructor(private clipboard: Clipboard) {}
 
   copyPassword() {
-    if (this.password){
-      this.clipboard.copy(this.password);
+    if (this.myPassword){
+      this.clipboard.copy(this.myPassword);
       this.copied = true; 
 
       setTimeout(() => {
