@@ -1,72 +1,75 @@
+<div class="box-container">
+ 
+  <h2 class="title">Password Generator</h2>
 
-<h2 class="title">Password Generator</h2>
-
-<div class="result-container">
-  <div class="result-field">
-    <!-- <p class="generate-field">P4$5W0rD!</p> -->
-    <input
-      disabled
-      class="generate-field"
-      [value]="password"
-      placeholder="P4$5W0rD!"
-    >
-    <p class="btn-copy"><mat-icon id="copy-icon">content_copy</mat-icon>
-    </p>
+  <div class="result-container">
+    <div class="result-field">
+      <!-- <p class="generate-field">P4$5W0rD!</p> -->
+      <input
+        disabled
+        class="generate-field"
+        [value]="password"
+        placeholder="P4$5W0rD!"
+      >
+      <p class="btn-copy"><mat-icon id="copy-icon">content_copy</mat-icon>
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="container">
-
-    <div class="settings-container">
-
-      <div class="password-range">
-        <div class="length-range">
-          <p class="length-title">Character Length</p>
-          <p>10</p>
-        </div>
-        
-        <input
-          type="range"
-          name="passwordLength"
-          min={8}
-          max={30}
-          (input)="onChangeLength($event)"
-        />
-      </div>
-      <!-- value={passwordLength} -->
+  <div class="container">
 
       <div class="settings-container">
-        <div class="setting">
-            <input type="checkbox" id="uppercase" [(ngModel)]="useUppercaseLetters" (change)="onChangeUseUppercaseLetters()"/>
-            <label for="uppercase">Include Uppercase Letters</label>
+
+        <div class="password-range">
+          <div class="length-range">
+            <p class="length-title">Character Length</p>
+            <p>10</p>
+          </div>
+          
+          <input
+            type="range"
+            name="passwordLength"
+            min={8}
+            max={30}
+            (input)="onChangeLength($event)"
+          />
         </div>
-        <div class="setting">
-            <input type="checkbox" id="lowercase" (change)="onChangeUseLowercaseLetters()" />
-            <label for="lowercase">Include Lowercase Letters</label>
+        <!-- value={passwordLength} -->
+
+        <div class="settings-container">
+          <div class="setting">
+              <input type="checkbox" id="uppercase" (change)="onChangeUseUppercaseLetters()" checked/>
+              <label for="uppercase">Include Uppercase Letters</label>
+          </div>
+          <div class="setting">
+              <input type="checkbox" id="lowercase" (change)="onChangeUseLowercaseLetters()" checked/>
+              <label for="lowercase">Include Lowercase Letters</label>
+          </div>
+          <div class="setting">
+              <input type="checkbox" id="number" (change)="onChangeUseNumbers()" checked />
+              <label for="number">Include Numbers</label>
+          </div>
+          <div class="setting">
+              <input type="checkbox" id="symbol" (input)="onChangeUseSymbols()" />
+              <label for="symbol">Include Symbols</label>
+          </div>
         </div>
-        <div class="setting">
-            <input type="checkbox" id="number" (change)="onChangeUseNumbers()" />
-            <label for="number">Include Numbers</label>
+
+        <div  class="btn-strength">
+          <p class="gray-color"> STRENGTH</p>
+          <p> MEDIUM | | | |</p>
         </div>
-        <div class="setting">
-            <input type="checkbox" id="symbol" (input)="onChangeUseSymbols()" />
-            <label for="symbol">Include Symbols</label>
-        </div>
+
+        <button 
+          (click)="generatePassword()"
+          class="btn-generate-pss" 
+          >GENERATE 
+          <mat-icon class="arrow-right">arrow_forward</mat-icon> 
+        </button>
+
       </div>
 
-      <div  class="btn-strength">
-        <p class="gray-color"> STRENGTH</p>
-        <p> MEDIUM | | | |</p>
-      </div>
+      <!-- [disabled]="! (length && (useUppercaseLetters || useLowercaseLetters || useNumbers || useSymbols))" -->
+  </div>
 
-      <button 
-        (click)="generatePassword()"
-        class="btn-generate-pss" 
-        >GENERATE 
-        <mat-icon class="arrow-right">arrow_forward</mat-icon> 
-      </button>
-
-    </div>
-
-    <!-- [disabled]="! (length && (useUppercaseLetters || useLowercaseLetters || useNumbers || useSymbols))" -->
 </div>

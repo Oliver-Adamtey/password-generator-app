@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
-import { FormsModule } from '@angular/forms';
+// import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatIconModule, FormsModule],
+  imports: [CommonModule, RouterOutlet, MatIconModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -17,9 +17,9 @@ export class AppComponent {
 
   password= ""
   length= 8;
-  useUppercaseLetters = false;
-  useLowercaseLetters = false;
-  useNumbers = false;
+  useUppercaseLetters = true;
+  useLowercaseLetters = true;
+  useNumbers = true;
   useSymbols =false;
 
   onChangeLength(event:Event){
@@ -75,7 +75,7 @@ export class AppComponent {
         return; // Exit function without generating a password
       }  
 
-      
+
       let generatedPassword =""
       for (let i = 0; i < this.length; i++) {
         const index = Math.floor(Math.random() * validChars.length);
