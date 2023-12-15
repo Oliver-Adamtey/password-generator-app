@@ -22,9 +22,11 @@
     /* margin-top: 6px; */
     color: #817D92;
 }
+
 .btn-copy{
     margin-top: 6px;
     background: none;
+    border: none;
     position: relative;
     cursor: pointer;
     color:#a4ffaf;
