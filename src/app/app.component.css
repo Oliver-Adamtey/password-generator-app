@@ -23,6 +23,13 @@
     color: #817D92;
 }
 
+.copied-message{
+    margin-top: 10px;
+    padding-right: 5px;
+    color: #a4ffaf;
+    font-size: 13px;
+}
+
 .btn-copy{
     margin-top: 6px;
     background: none;
