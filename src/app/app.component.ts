@@ -56,7 +56,7 @@ export class AppComponent {
 
       setTimeout(() => {
         this.copied = false;
-      }, 100);
+      }, 200);
     }
   }
 
