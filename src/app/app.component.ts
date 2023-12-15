@@ -44,7 +44,7 @@ export class AppComponent {
 
 // copy function
 
-  generatedPassword: string = '';
+  geneatedPassword: string = '';
   copied: boolean = false;
 
   constructor(private clipboard: Clipboard) {}
