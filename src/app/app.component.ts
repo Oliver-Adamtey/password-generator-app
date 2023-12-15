@@ -44,14 +44,14 @@ export class AppComponent {
 
 // copy function
 
-  myPassword: string = '';
+  generatedPassword: string = '';
   copied: boolean = false;
 
   constructor(private clipboard: Clipboard) {}
 
   copyPassword() {
-    if (this.myPassword){
-      this.clipboard.copy(this.myPassword)
+    if (this.password){
+      this.clipboard.copy(this.password)
       this.copied = true; 
 
       setTimeout(() => {
