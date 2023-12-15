@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 // import { FormsModule } from '@angular/forms';
 import {Clipboard} from '@angular/cdk/clipboard';
