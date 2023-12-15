@@ -7,7 +7,7 @@ import {Clipboard} from '@angular/cdk/clipboard';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatIconModule],
+  imports: [CommonModule, MatIconModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -52,7 +52,7 @@ export class AppComponent {
 
   copyPassword() {
     if (this.myPassword){
-      this.clipboard.copy(this.myPassword);
+      this.clipboard.copy(this.myPassword)
       this.copied = true; 
 
       setTimeout(() => {
