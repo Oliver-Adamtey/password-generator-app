@@ -16,7 +16,7 @@ export class AppComponent {
   title = 'password-generator-app';
 
   password= ""
-  length= 8;
+  length= 18;
   useUppercaseLetters = true;
   useLowercaseLetters = true;
   useNumbers = true;
