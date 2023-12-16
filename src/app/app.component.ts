@@ -60,6 +60,23 @@ export class AppComponent {
     }
   }
 
+  // Strength Logics
+
+  getStrength(): string {
+    const length = this.password.length;
+    if (length >= 6 && length <= 8) {
+      return 'Too Weak';
+    } else if (length > 8 && length <= 14) {
+      return 'Weak';
+    } else if (length > 14 && length <= 16) {
+      return 'Medium';
+    } else if (length > 16 && length <= 30) {
+      return 'Strong';
+    } else {
+      return '';
+    }
+  }
+
   generatePassword() {
       const uppercaseletters = 'ABCDEFGHIJKLMNOPQRSTUVWYZ';
       const lowercaseletters = 'abcdefghijklmnopqrstuvwyz';
