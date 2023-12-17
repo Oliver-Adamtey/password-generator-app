@@ -30,10 +30,12 @@
           <input
             type="range"
             name="passwordLength"
-            min={8}
+            min={0}
             max={30}
+            step="1"
             (input)="updateLength($event)"
-            [(ngModel)]="passwordLength"
+            [ngModel]="passwordLength"
+            limitRange
           />
         </div>
         <!-- value={passwordLength} -->
