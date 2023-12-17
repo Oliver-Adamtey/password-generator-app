@@ -24,7 +24,7 @@
         <div class="password-range">
           <div class="length-range">
             <p class="length-title">Character Length</p>
-            <p id="lengthValue">10</p>
+            <p>{{ passwordLength }}</p>
           </div>
           
           <input
@@ -32,8 +32,8 @@
             name="passwordLength"
             min={8}
             max={30}
-            onchange="updateLength(this.value)"
-            value="10"
+            (input)="updateLength($event)"
+            [(ngModel)]="passwordLength"
           />
         </div>
         <!-- value={passwordLength} -->
