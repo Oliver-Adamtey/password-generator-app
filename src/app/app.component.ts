@@ -16,15 +16,22 @@ export class AppComponent {
   title = 'password-generator-app';
 
   password= ""
-  passwordLength: number = 10;
-
-  updateLength(event: any){
-    this.passwordLength = event.target.value;
-  }
   useUppercaseLetters = true;
   useLowercaseLetters = true;
   useNumbers = true;
   useSymbols =false;
+
+  //Range Slider 
+  passwordLength: number = 10;
+
+  updateLength(event: any){
+    // const value = parseInt(event.target.value, 10);
+    // if (value >= 0 && value <= 30){
+    //   this.passwordLength = value;
+    // }
+    this.passwordLength = event.target.value;
+  }
+
 
   onChangeLength(event:Event){
     this.passwordLength= parseInt((event.target as HTMLInputElement).value)
