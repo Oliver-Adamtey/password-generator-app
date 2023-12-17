@@ -32,7 +32,8 @@
             name="passwordLength"
             min={8}
             max={30}
-            (input)="onChangeLength($event)"
+            onchange="updateLength(this.value)"
+            value="10"
           />
         </div>
         <!-- value={passwordLength} -->
