@@ -16,14 +16,18 @@ export class AppComponent {
   title = 'password-generator-app';
 
   password= ""
-  length= 10;
+  passwordLength: number = 10;
+
+  updateLength(event: any){
+    this.passwordLength = event.target.value;
+  }
   useUppercaseLetters = true;
   useLowercaseLetters = true;
   useNumbers = true;
   useSymbols =false;
 
   onChangeLength(event:Event){
-    this.length= parseInt((event.target as HTMLInputElement).value)
+    this.passwordLength= parseInt((event.target as HTMLInputElement).value)
   }
 
   onChangeUseUppercaseLetters(){
@@ -113,7 +117,7 @@ export class AppComponent {
 
 
       let generatedPassword =""
-      for (let i = 0; i < this.length; i++) {
+      for (let i = 0; i < this.passwordLength; i++) {
         const index = Math.floor(Math.random() * validChars.length);
         generatedPassword+= validChars[index];
       }
