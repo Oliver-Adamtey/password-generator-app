@@ -132,7 +132,7 @@
 .empty-bar {
     width: 5px;
     height: 20px;
-    background-color: #E6E5EA; 
+    border: 1px #E6E5EA solid;
     display: inline-block;
     margin-right: 5px;
 }
