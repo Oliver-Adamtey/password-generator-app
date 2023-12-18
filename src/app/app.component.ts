@@ -15,8 +15,10 @@ export class AppComponent {
 
   title = 'password-generator-app';
 
-    // copy function
+  // Generated Password Holder
+  password= ""
 
+  // copy function
   geneatedPassword: string = '';
   copied: boolean = false;
 
@@ -33,29 +35,27 @@ export class AppComponent {
     }
   }
 
-    //Range Slider 
-    passwordLength: number = 10;
-    maxPasswordLength: number = 30;
-    
-    updateLength(event: any){
-      const value = parseInt(event.target.value, 10);
-      if (value >= 0 && value <= 30){
-        this.passwordLength = value;
-      }
-      this.passwordLength = event.target.value;
+  //Range Slider 
+  passwordLength: number = 10;
+  maxPasswordLength: number = 30;
+  
+  updateLength(event: any){
+    const value = parseInt(event.target.value, 10);
+    if (value >= 0 && value <= 30){
+      this.passwordLength = value;
     }
+  }
+  
+  // onChangeLength(event:Event){
+  //   this.passwordLength= parseInt((event.target as HTMLInputElement).value)
+  // }
   
 
   // CheckBoxes Logics 
-  password= ""
   useUppercaseLetters = true;
   useLowercaseLetters = true;
   useNumbers = true;
   useSymbols =false;
-
-  onChangeLength(event:Event){
-    this.passwordLength= parseInt((event.target as HTMLInputElement).value)
-  }
 
   onChangeUseUppercaseLetters(){
     this.useUppercaseLetters= !this.useUppercaseLetters
@@ -72,9 +72,6 @@ export class AppComponent {
   onChangeUseSymbols(){
     this.useSymbols= !this.useSymbols
   }
-
-
-
 
   // Strength Logics
 
