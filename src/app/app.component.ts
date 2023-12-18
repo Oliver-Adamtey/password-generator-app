@@ -15,33 +15,43 @@ export class AppComponent {
 
   title = 'password-generator-app';
 
+    // copy function
+
+  geneatedPassword: string = '';
+  copied: boolean = false;
+
+  constructor(private clipboard: Clipboard) {}
+
+  copyPassword() {
+    if (this.password){
+      this.clipboard.copy(this.password)
+      this.copied = true; 
+
+      setTimeout(() => {
+        this.copied = false;
+      }, 2000);
+    }
+  }
+
+    //Range Slider 
+    passwordLength: number = 10;
+    maxPasswordLength: number = 30;
+    
+    updateLength(event: any){
+      const value = parseInt(event.target.value, 10);
+      if (value >= 0 && value <= 30){
+        this.passwordLength = value;
+      }
+      this.passwordLength = event.target.value;
+    }
+  
+
+  // CheckBoxes Logics 
   password= ""
   useUppercaseLetters = true;
   useLowercaseLetters = true;
   useNumbers = true;
   useSymbols =false;
-
-  //Range Slider 
-
-  passwordLength: number = 10;
-
-// Function to update the length value
-updateLength(event: Event) {
-  const value = +((event.target as HTMLInputElement).value);
-  this.passwordLength = value > 30 ? 30 : value; // Restrict value to a maximum of 30
-}
-
-
-  // passwordLength: number = 10;
-
-  // updateLength(event: any){
-  //   const value = parseInt(event.target.value, 10);
-  //   if (value >= 0 && value <= 30){
-  //     this.passwordLength = value;
-  //   }
-  //   this.passwordLength = event.target.value;
-  // }
-
 
   onChangeLength(event:Event){
     this.passwordLength= parseInt((event.target as HTMLInputElement).value)
@@ -63,25 +73,11 @@ updateLength(event: Event) {
     this.useSymbols= !this.useSymbols
   }
 
-// copy function
 
-  geneatedPassword: string = '';
-  copied: boolean = false;
 
-  constructor(private clipboard: Clipboard) {}
-
-  copyPassword() {
-    if (this.password){
-      this.clipboard.copy(this.password)
-      this.copied = true; 
-
-      setTimeout(() => {
-        this.copied = false;
-      }, 2000);
-    }
-  }
 
   // Strength Logics
+
   defaultPassword = 'DefaultPassword';
 
   getStrength(): string {
@@ -98,6 +94,8 @@ updateLength(event: Event) {
       return '';
     }
   }
+
+  // Generating Button
 
   generatePassword() {
       const uppercaseletters = 'ABCDEFGHIJKLMNOPQRSTUVWYZ';
