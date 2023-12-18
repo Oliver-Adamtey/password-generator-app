@@ -74,9 +74,6 @@ export class AppComponent {
   }
 
   // Strength Logics
-
-  defaultPassword = 'DefaultPassword';
-
   getStrength(): string {
     const length = this.password.length;
     if (length >= 6 && length <= 8) {
