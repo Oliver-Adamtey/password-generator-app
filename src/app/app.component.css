@@ -90,7 +90,7 @@
 
 .btn-strength p{
     color: #E6E5EA;
-    padding: 20px;
+    padding: 23px;
     font-size: 24px;
 }
 .btn-strength .gray-color{
@@ -102,7 +102,8 @@
 .tooweak-bar {
     width: 5px;
     height: 20px;
-    background-color: #f64a4a; /* Change the color as needed */
+    background-color: #f64a4a;
+    border: 1.5px #f64a4a solid;
     display: inline-block;
     margin-right: 5px;
   }
@@ -110,6 +111,7 @@
     width: 5px;
     height: 20px;
     background-color: #fb7658; 
+    border: 1.5px #fb7658 solid;
     display: inline-block;
     margin-right: 5px;
   }
@@ -117,6 +119,7 @@
     width: 5px;
     height: 20px;
     background-color: #f8cd65; 
+    border: 1.5px #f8cd65 solid;
     display: inline-block;
     margin-right: 5px;
   }
@@ -125,6 +128,7 @@
     width: 5px;
     height: 20px;
     background-color: #a4ffaf;
+    border: 1.5px #a4ffaf solid;
     display: inline-block;
     margin-right: 5px;
   }
