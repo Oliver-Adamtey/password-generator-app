@@ -99,6 +99,36 @@
     font-size: 18PX;
 }
 
+.red-bar {
+    width: 5px;
+    height: 20px;
+    background-color: red; /* Change the color as needed */
+    display: inline-block;
+    margin-right: 2px;
+  }
+  
+  .green-bar {
+    width: 20px;
+    height: 5px;
+    background-color: green; /* Change the color as needed */
+    display: inline-block;
+    margin-right: 2px;
+  }
+  
+  /* Define other bar colors and styles as needed */
+  .empty-bar {
+    width: 5px;
+    height: 20px;
+    background-color: lightgray; /* Change the color as needed */
+    display: inline-block;
+    margin-right: 2px;
+  }
+  
+  .strong-color {
+    color: rgb(0, 255, 94); /* Change the color as needed */
+  }
+  
+
 .btn-generate-pss{
     width: 100%;
     height: 65px;
