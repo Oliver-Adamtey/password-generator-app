@@ -99,30 +99,43 @@
     font-size: 18PX;
 }
 
-.red-bar {
+.tooweak-bar {
     width: 5px;
     height: 20px;
-    background-color: red; /* Change the color as needed */
+    background-color: #f64a4a; /* Change the color as needed */
+    display: inline-block;
+    margin-right: 5px;
+  }
+.weak-bar {
+    width: 5px;
+    height: 20px;
+    background-color: #fb7658; 
+    display: inline-block;
+    margin-right: 5px;
+  }
+.medium-bar {
+    width: 5px;
+    height: 20px;
+    background-color: #f8cd65; 
     display: inline-block;
     margin-right: 5px;
   }
   
-  .green-bar {
+.stong-bar {
     width: 5px;
     height: 20px;
-    background-color: green; /* Change the color as needed */
+    background-color: #a4ffaf;
     display: inline-block;
     margin-right: 5px;
   }
   
-  /* Define other bar colors and styles as needed */
-  .empty-bar {
+.empty-bar {
     width: 5px;
     height: 20px;
-    background-color: lightgray; /* Change the color as needed */
+    background-color: #E6E5EA; 
     display: inline-block;
     margin-right: 5px;
-  }
+}
   
 
 .btn-generate-pss{
