@@ -160,6 +160,10 @@
     border: 1px #a4ffaf solid;
 }
 
+.error-message{
+    text-align: center;
+    color: #f64a4a;
+}
 
 
 
