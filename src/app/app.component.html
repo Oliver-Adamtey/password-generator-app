@@ -63,11 +63,11 @@
           <!-- <p> MEDIUM | | | |</p> -->
           <p>
             <span *ngIf="getStrength() === 'Too Weak'" class="red-color">TOO WEAK |</span>
-            <span *ngIf="getStrength() === 'Too Weak'" class="gray-color">| | |</span>
+            <span *ngIf="getStrength() === 'Too Weak'" class="gray-color">|||</span>
             <span *ngIf="getStrength() === 'Weak'">| |</span>
             <span *ngIf="getStrength() === 'Weak'" class="gray-color">| |</span>
-            <span *ngIf="getStrength() === 'Medium' || getStrength() === ''">| | |</span>
-            <span *ngIf="getStrength() === 'Strong'" class="green-color">| | | |</span>
+            <span *ngIf="getStrength() === 'Medium'" class="green-color">||| </span>
+            <span *ngIf="getStrength() === 'Strong' || getStrength() === ''">||||</span>
           </p>
         </div>
 
