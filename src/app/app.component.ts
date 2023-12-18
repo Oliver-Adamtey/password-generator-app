@@ -90,7 +90,6 @@ export class AppComponent {
   }
 
   // Generating Button
-
   generatePassword() {
       const uppercaseletters = 'ABCDEFGHIJKLMNOPQRSTUVWYZ';
       const lowercaseletters = 'abcdefghijklmnopqrstuvwyz';
