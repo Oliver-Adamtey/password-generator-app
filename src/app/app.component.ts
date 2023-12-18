@@ -90,17 +90,21 @@ export class AppComponent {
   }
 
   // Generating Button
+  showErrorMessage: boolean = false;
   generatePassword() {
       const uppercaseletters = 'ABCDEFGHIJKLMNOPQRSTUVWYZ';
       const lowercaseletters = 'abcdefghijklmnopqrstuvwyz';
       const numbers = '1234567890';
       const symbols = '!@#$%^&*()-_?¡';
-
+      
       // Check if none of the checkboxes are selected
       if (!(this.useUppercaseLetters || this.useLowercaseLetters || this.useNumbers || this.useSymbols)) {
         console.log("Please select at least one option");
+        this.showErrorMessage = true;
         this.password = ""; // Clear password field
         return; // Exit function without generating a password
+      } else{
+        this.showErrorMessage = false;
       }
   
       //concatenates the characters from checkboxes
