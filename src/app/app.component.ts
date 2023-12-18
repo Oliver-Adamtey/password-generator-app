@@ -22,15 +22,25 @@ export class AppComponent {
   useSymbols =false;
 
   //Range Slider 
+
   passwordLength: number = 10;
 
-  updateLength(event: any){
-    // const value = parseInt(event.target.value, 10);
-    // if (value >= 0 && value <= 30){
-    //   this.passwordLength = value;
-    // }
-    this.passwordLength = event.target.value;
-  }
+// Function to update the length value
+updateLength(event: Event) {
+  const value = +((event.target as HTMLInputElement).value);
+  this.passwordLength = value > 30 ? 30 : value; // Restrict value to a maximum of 30
+}
+
+
+  // passwordLength: number = 10;
+
+  // updateLength(event: any){
+  //   const value = parseInt(event.target.value, 10);
+  //   if (value >= 0 && value <= 30){
+  //     this.passwordLength = value;
+  //   }
+  //   this.passwordLength = event.target.value;
+  // }
 
 
   onChangeLength(event:Event){
