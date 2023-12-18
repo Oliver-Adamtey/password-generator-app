@@ -48,10 +48,14 @@
     background:  #24232c;
 }
 
+.password-range
+
+
 .length-range{
     display: flex;
     justify-content: space-between;
 }
+
 .length-title{
     font-size: 18px;
     color: #E6E5EA;
