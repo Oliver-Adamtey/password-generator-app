@@ -103,6 +103,7 @@ export class AppComponent {
         return; // Exit function without generating a password
       }
   
+      //concatenates the characters from checkboxes
       let validChars =''
       if (this.useUppercaseLetters) {
         validChars += uppercaseletters;
@@ -117,13 +118,14 @@ export class AppComponent {
         validChars+= symbols;
       }
 
+      //Checks again after concatenation
       if (!validChars) {
         console.log("Please select at least one option"); // Display a message if no checkbox is selected
         this.password = ""; // Clear password field
         return; // Exit function without generating a password
       }  
 
-
+      // Loops to generate a password by randomly selecting characters
       let generatedPassword =""
       for (let i = 0; i < this.passwordLength; i++) {
         const index = Math.floor(Math.random() * validChars.length);
