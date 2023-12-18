@@ -52,9 +52,9 @@ export class AppComponent {
 
 
   // CheckBox change functions
-  useUppercaseLetters = true;
-  useLowercaseLetters = true;
-  useNumbers = true;
+  useUppercaseLetters = false;
+  useLowercaseLetters = false;
+  useNumbers = false;
   useSymbols =false;
 
   onChangeUseUppercaseLetters(){
