@@ -36,7 +36,7 @@ export class AppComponent {
   }
 
   //Range Slider 
-  passwordLength: number = 10;
+  passwordLength: number = 0;
   maxPasswordLength: number = 30;
   
   updateLength(event: any){
