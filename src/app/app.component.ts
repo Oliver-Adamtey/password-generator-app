@@ -98,7 +98,7 @@ export class AppComponent {
 
       // Check if none of the checkboxes are selected
       if (!(this.useUppercaseLetters || this.useLowercaseLetters || this.useNumbers || this.useSymbols)) {
-        console.log("Please select at least one option"); // Display a message
+        console.log("Please select at least one option");
         this.password = ""; // Clear password field
         return; // Exit function without generating a password
       }
@@ -120,9 +120,9 @@ export class AppComponent {
 
       //Checks again after concatenation
       if (!validChars) {
-        console.log("Please select at least one option"); // Display a message if no checkbox is selected
-        this.password = ""; // Clear password field
-        return; // Exit function without generating a password
+        console.log("Please select at least one option");
+        this.password = ""; 
+        return; 
       }  
 
       // Loops to generate a password by randomly selecting characters
@@ -131,6 +131,7 @@ export class AppComponent {
         const index = Math.floor(Math.random() * validChars.length);
         generatedPassword+= validChars[index];
       }
+      // assigning it to the password property
       this.password=generatedPassword;
   }
 }
