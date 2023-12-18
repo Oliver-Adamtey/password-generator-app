@@ -49,28 +49,28 @@ export class AppComponent {
   // onChangeLength(event:Event){
   //   this.passwordLength= parseInt((event.target as HTMLInputElement).value)
   // }
-  
 
-  // CheckBoxes Logics 
+
+  // CheckBox change functions
   useUppercaseLetters = true;
   useLowercaseLetters = true;
   useNumbers = true;
   useSymbols =false;
 
   onChangeUseUppercaseLetters(){
-    this.useUppercaseLetters= !this.useUppercaseLetters
+    this.useUppercaseLetters = !this.useUppercaseLetters
   }
 
   onChangeUseLowercaseLetters(){
-    this.useLowercaseLetters= !this.useLowercaseLetters
+    this.useLowercaseLetters = !this.useLowercaseLetters
   }
 
   onChangeUseNumbers(){
-    this.useNumbers= !this.useNumbers
+    this.useNumbers = !this.useNumbers
   }
 
   onChangeUseSymbols(){
-    this.useSymbols= !this.useSymbols
+    this.useSymbols = !this.useSymbols
   }
 
   // Strength Logics
