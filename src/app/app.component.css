@@ -104,15 +104,15 @@
     height: 20px;
     background-color: red; /* Change the color as needed */
     display: inline-block;
-    margin-right: 2px;
+    margin-right: 5px;
   }
   
   .green-bar {
-    width: 20px;
-    height: 5px;
+    width: 5px;
+    height: 20px;
     background-color: green; /* Change the color as needed */
     display: inline-block;
-    margin-right: 2px;
+    margin-right: 5px;
   }
   
   /* Define other bar colors and styles as needed */
@@ -121,11 +121,7 @@
     height: 20px;
     background-color: lightgray; /* Change the color as needed */
     display: inline-block;
-    margin-right: 2px;
-  }
-  
-  .strong-color {
-    color: rgb(0, 255, 94); /* Change the color as needed */
+    margin-right: 5px;
   }
   
 
