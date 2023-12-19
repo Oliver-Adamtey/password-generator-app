@@ -75,13 +75,13 @@
         <div class="btn-strength">
           <p class="gray-color">STRENGTH</p>
           <p>
-            <span *ngIf="getStrength() === 'Too Weak'" class="red-color">
+            <span *ngIf="getStrength() === 'Too Weak'" class="tooweak-color">
               TOO WEAK <span class="tooweak-bar"></span><span ></span><span class="empty-bar"></span><span class="empty-bar"></span><span class="empty-bar"></span>
             </span>
             <span *ngIf="getStrength() === 'Weak'">
               WEAK <span class="weak-bar"></span><span class="weak-bar"></span><span class="empty-bar"></span><span class="empty-bar"></span>
             </span>
-            <span *ngIf="getStrength() === 'Medium'" class="green-color">
+            <span *ngIf="getStrength() === 'Medium'" class="medium-color">
               MEDIUM <span class="medium-bar"></span><span class="medium-bar"></span><span class="medium-bar"></span><span class="empty-bar"></span>
             </span>
             <ng-container *ngIf="getStrength() === 'Strong' || getStrength() === ''">
