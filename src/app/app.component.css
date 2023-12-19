@@ -59,6 +59,9 @@
     font-size: 18px;
     color: #E6E5EA;
 }
+.range-count{
+    color: #a4ffaf;
+}
 
 .password-range input{
     width: 97%;
