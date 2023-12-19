@@ -1,24 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'JetBrains Mono', monospace;
-    background: #18171F;
-    color: #E6E5EA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-  @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('./assets/fonts/JetBrainsMono-Bold.ttf') format('truetype'); 
-    font-weight: bold;
-    font-style: normal;
-  }
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono', sans-serif;
+}
+  
+body {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #18171F;
+}
+
   

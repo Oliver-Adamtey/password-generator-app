@@ -12,7 +12,7 @@
       >
       <span *ngIf="copied" class="copied-message">Copied!</span>
       <button class="btn-copy" (click)="copyPassword()">
-        <mat-icon id="copy-icon">content_copy</mat-icon>
+        <img id="copy-icon" src="../assets/images/icon-copy.svg" alt="">
       </button>
     </div>
   </div>
@@ -96,10 +96,28 @@
       (click)="generatePassword()"
       class="btn-generate-pss" 
       >GENERATE 
-      <mat-icon class="arrow-right">arrow_forward</mat-icon> 
+      <img class="arrow-right" src="../assets/images/icon-arrow-right.svg" alt="">
     </button>
 
     <p class="error-message" *ngIf="showErrorMessage">Please select at least one option</p>
   </div>
 
 </div>
+
+
+
+
+<!-- <div class="slider-cont">
+  <div class="slider">
+    <input type="range" min="0" max="30" value="10">
+    <progress min="0" max="30" value="10"></progress>
+  </div>
+
+  <script>
+    slider = document.querySelector("input");
+    slider.oninput = function(){
+      progressBar = document.querySelector("progress");
+      progressBar.value = slider.value;
+    }
+  </script>
+</div> -->
