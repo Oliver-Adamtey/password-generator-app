@@ -171,7 +171,7 @@
 
 /* CSS for tablets */
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .title{
         /* padding-top: 60px; */
         font-size: 18px;
@@ -217,7 +217,7 @@
   
   /* CSS for laptops */
 
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 1024px){
     .title{
         /* padding-top: 60px; */
         font-size: 18px;
@@ -262,8 +262,7 @@
   }
   
   /* CSS for mobiles */
-
-  @media (max-width: 530px){
+  @media only screen and (max-width: 767px) {
     .title{
         /* padding-top: 60px; */
         font-size: 14px;
@@ -274,10 +273,13 @@
       margin-right: auto;
     }
     .result-field{
-        margin: 20px;
+        height: 30px;
+        width: 310px;
+    }
+    .result-field input{
         font-size: 18px;
         margin: 10px;
-        padding: 10px;
+        padding: 7px;
     }
     .container{
         /* width: calc(100% - 80px);  */
