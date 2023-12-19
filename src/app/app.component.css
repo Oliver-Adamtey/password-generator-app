@@ -19,8 +19,7 @@
     font-size: 30px;
     background: none;
     border: none;
-    /* margin-top: 6px; */
-    color: #817D92;
+    color: #E6E5EA;
 }
 
 .copied-message{
@@ -42,13 +41,11 @@
     color: white;
 }
 
-.container {
+.settings-container {
     /* height: 443px; */
     padding: 20px;
     background:  #24232c;
 }
-
-
 
 .length-range{
     display: flex;
@@ -58,16 +55,19 @@
 .length-title{
     font-size: 18px;
     color: #E6E5EA;
+    margin: 13px;
 }
 .range-count{
+    font-size: 32px;
     color: #a4ffaf;
 }
 
-.password-range input{
-    width: 97%;
+.slider{
+    margin: 10px;
+    width: 100%;
 }
 
-.settings-container input {
+.setting-container input {
     margin: 15px;
 }
 
@@ -149,7 +149,7 @@
     height: 65px;
     background-color: #a4ffaf;
     border: none;
-    cursor: pointer;
+    cursor: pointer; 
 }
 .arrow-right{
     font-size: 15px;
@@ -279,9 +279,7 @@
         width: 310px;
     }
     .result-field input{
-        font-size: 18px;
-        margin: 10px;
-        padding: 7px;
+        font-size: 20px;
     }
     .container{
         /* width: calc(100% - 80px);  */
