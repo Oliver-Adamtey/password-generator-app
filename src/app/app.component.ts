@@ -40,7 +40,7 @@ export class AppComponent {
   maxPasswordLength: number = 20;
   
   updateLength(event: any){
-    const value = parseInt(event.target.value, 10);
+    const value = parseInt(event.target.value);
     if (value >= 0 && value <= 30){
       this.passwordLength = value;
     }
