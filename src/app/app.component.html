@@ -24,7 +24,7 @@
         <div class="password-range">
           <div class="length-range">
             <p class="length-title">Character Length</p>
-            <p>{{ passwordLength }}</p>
+            <p class="range-count">{{ passwordLength }}</p>
           </div>
           
           <input
@@ -37,7 +37,6 @@
             [value]="passwordLength"
           />
         </div>
-        <!-- value={passwordLength} -->
 
         <div class="settings-container">
           <div class="setting">
@@ -64,7 +63,7 @@
             <span *ngIf="getStrength() === 'Too Weak'" class="red-color">TO WEAK |</span>
             <span *ngIf="getStrength() === 'Weak'">WEAK ||</span>
             <span *ngIf="getStrength() === 'Medium'" class="green-color">MEDIUM |||</span>
-            structural directive
+            
             <ng-container *ngIf="getStrength() === 'Strong' || getStrength() === ''">
               <span *ngIf="getStrength() === 'Strong'">STRONG </span>
               ||||
@@ -84,6 +83,7 @@
             <span *ngIf="getStrength() === 'Medium'" class="medium-color">
               MEDIUM <span class="medium-bar"></span><span class="medium-bar"></span><span class="medium-bar"></span><span class="empty-bar"></span>
             </span>
+            <!-- structural directive -->
             <ng-container *ngIf="getStrength() === 'Strong' || getStrength() === ''">
               <span *ngIf="getStrength() === 'Strong'" class="strong-color">
                 STRONG <span class="strong-bar"></span><span class="strong-bar"></span><span class="strong-bar"></span><span class="strong-bar"></span>
