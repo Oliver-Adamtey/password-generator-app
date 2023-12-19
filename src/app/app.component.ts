@@ -37,7 +37,7 @@ export class AppComponent {
 
   //Range Slider 
   passwordLength: number = 0;
-  maxPasswordLength: number = 30;
+  maxPasswordLength: number = 20;
   
   updateLength(event: any){
     const value = parseInt(event.target.value, 10);
@@ -76,13 +76,13 @@ export class AppComponent {
   // Strength Logics
   getStrength(): string {
     const length = this.password.length;
-    if (length >= 1 && length <= 9) {
+    if (length >= 1 && length <= 5) {
       return 'Too Weak';
-    } else if (length > 9 && length <= 15) {
+    } else if (length > 5 && length <= 9) {
       return 'Weak';
-    } else if (length > 15 && length <= 22) {
+    } else if (length > 9 && length <= 15) {
       return 'Medium';
-    } else if (length > 22 && length <= 30) {
+    } else if (length > 15 && length <= 20) {
       return 'Strong';
     } else {
       return '';
