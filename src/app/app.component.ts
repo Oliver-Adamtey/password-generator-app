@@ -45,11 +45,13 @@ export class AppComponent {
       this.passwordLength = value;
     }
   }
-  
-  // onChangeLength(event:Event){
-  //   this.passwordLength= parseInt((event.target as HTMLInputElement).value)
-  // }
 
+  //OUTSIDE
+  getPercentage(): number {
+    const value = this.passwordLength;
+    const max = this.maxPasswordLength;
+    return (value / max) * 100;
+  }
 
   // CheckBox change functions
   useUppercaseLetters = false;
@@ -138,4 +140,6 @@ export class AppComponent {
       // assigning it to the password property
       this.password=generatedPassword;
   }
+
 }
+
