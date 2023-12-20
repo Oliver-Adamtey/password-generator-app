@@ -33,14 +33,12 @@
     background: none;
     border: none;
     cursor: pointer;
-    color:#a4ffaf;
 }
-.btn-copy:hover{
-    color: white;
+.btn-copy:hover img.copy-icon {
+    filter: brightness(9.8);
 }
 
 .settings-container {
-    /* height: 443px; */
     padding: 20px;
     background:  #24232c;
 }
@@ -60,16 +58,15 @@
     color: #a4ffaf;
 }
 
-
-/* outside */
 .slider{
+    width: 98%;
     appearance: none;
-    accent-color: white;
+    accent-color: #E6E5EA;
     cursor: pointer;
     height: 8px;
-    background-color: #18171F;
-    background-image: green;
-    /* background-size: 30% 100%; */
+    background: #18171F;
+    background-image: linear-gradient(#a4ffaf, #a4ffaf);
+    background-size: 30% 100%;
     background-repeat: no-repeat;
 }
 
@@ -77,55 +74,15 @@
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
-    background-color: white;
+    background-color: #E6E5EA;
     border-radius: 50%;
 }
 
 .slider:hover::-webkit-slider-thumb {
     background: #18171F;
-    border: 2px solid #E6E5EA;
+    border: 1.5px solid #a4ffaf;
     -webkit-appearance: none;
-  }
-
-  /* outside ends */
-
-/* .slider{
-    appearance: none;
-    margin: 10px;
-    width: 100%;
-    overflow: hidden;
 }
-  
-.slider::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 10px;
-    background-color: #18171F;
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 20px; 
-    height: 20px; 
-    border-radius: 50%;
-    margin: -5px;
-    background-color: #E6E5EA; 
-    cursor: pointer;
-    box-shadow: -407px 0 0 400px #a4ffaf;
-}
-  
-.slider::-webkit-slider-thumb:hover {
-    border: 1px #a4ffaf solid;
-    background-color: #18171F;
-} */
-
-
-/* .slider{
-    appearance: none;
-    margin: 10px;
-    width: 100%;
-    background: #18171F;
-} */
-
 
 .setting-container{
     margin-top: 15px;
@@ -133,12 +90,10 @@
 
 .setting {
     height: 32px;
-    position: relative;
     cursor: pointer;
     color: #E6E5EA;
 }
 
-/* outside stArt */
 label{
     margin: 13px;
 }
@@ -168,8 +123,7 @@ input {
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-  }
-/* outside end */
+}
 
 .btn-strength{
     display: flex;
@@ -183,17 +137,14 @@ input {
 
 .btn-strength p{
     color: #E6E5EA;
-    padding: 23px;
-    font-size: 24px;
 }
+
 .btn-strength .gray-color{
-    padding: 23px;
     color: #817D92;
-    font-size: 18PX;
 }
 
 .tooweak-bar {
-    width: 5px;
+    width: 8px;
     height: 20px;
     background-color: #f64a4a;
     border: 1.5px #f64a4a solid;
@@ -201,7 +152,7 @@ input {
     margin-right: 5px;
   }
 .weak-bar {
-    width: 5px;
+    width: 8px;
     height: 20px;
     background-color: #fb7658; 
     border: 1.5px #fb7658 solid;
@@ -209,7 +160,7 @@ input {
     margin-right: 5px;
   }
 .medium-bar {
-    width: 5px;
+    width: 8px;
     height: 20px;
     background-color: #f8cd65; 
     border: 1.5px #f8cd65 solid;
@@ -218,7 +169,7 @@ input {
   }
   
 .strong-bar {
-    width: 5px;
+    width: 8px;
     height: 20px;
     background-color: #a4ffaf;
     border: 1.5px #a4ffaf solid;
@@ -227,7 +178,7 @@ input {
   }
   
 .empty-bar {
-    width: 5px;
+    width: 8px;
     height: 20px;
     border: 1.5px #E6E5EA solid;
     display: inline-block;
@@ -241,18 +192,19 @@ input {
     background-color: #a4ffaf;
     border: none;
     cursor: pointer; 
-}
-.arrow-right{
-    margin-left: 28px;
-}
-.arrow-right:hover{
-    background: #a4ffaf;
+    font-weight: 800;
 }
 
-.btn-generate-pss:hover{
+.btn-generate-pss:hover {
     background-color: #24232c;
     color: #a4ffaf;
     border: 1px #a4ffaf solid;
+}
+.arrow-right{
+    margin-left: 8px;
+}
+.btn-generate-pss:hover img{
+    filter: brightness(9.8);
 }
 
 .error-message{
@@ -263,12 +215,10 @@ input {
 
 
 
-
 /* CSS for tablets */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .title{
-        /* padding-top: 60px; */
         font-size: 18px;
     }
     .result-container{
@@ -283,7 +233,6 @@ input {
         padding: 10px;
     }
     .container{
-        /* width: calc(100% - 80px);  */
         margin: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -314,7 +263,6 @@ input {
 
   @media only screen and (min-width: 1024px){
     .title{
-        /* padding-top: 60px; */
         font-size: 18px;
     }
     .result-container{
@@ -329,7 +277,6 @@ input {
         padding: 10px;
     }
     .container{
-        /* width: calc(100% - 80px);  */
         margin: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -359,7 +306,6 @@ input {
   /* CSS for mobiles */
   @media only screen and (max-width: 767px) {
     .title{
-        /* padding-top: 60px; */
         font-size: 14px;
     }
     .result-container{
@@ -367,15 +313,11 @@ input {
       margin-left: auto;
       margin-right: auto;
     }
-    .result-field{
-        height: 50px;
-        width: 310px;
-    }
+   
     .result-field input{
         font-size: 20px;
     }
     .container{
-        /* width: calc(100% - 80px);  */
         margin: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -384,9 +326,7 @@ input {
         font-size: 14px;
     }
     .btn-strength{
-        width: 100%;
         height: 42px;
-        margin: 10px 10px 15px 0;
     }
     
     .btn-strength p{
@@ -400,5 +340,5 @@ input {
     .btn-generate-pss{
         height: 39px;
     }
-  }
-  
+}
+
