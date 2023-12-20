@@ -10,7 +10,7 @@
         [value]="password"
         placeholder="P4$5W0rD!"
       >
-      <span *ngIf="copied" class="copied-message">Copied!</span>
+      <span *ngIf="copied" class="copied-message">COPIED</span>
       <button class="btn-copy" (click)="copyPassword()">
         <img class="copy-icon" src="../assets/images/icon-copy.svg" alt="">
       </button>
@@ -25,16 +25,17 @@
         <p class="length-title">Character Length</p>
         <p class="range-count">{{ passwordLength }}</p>
       </div>
-      
-      <input
-        type="range"
-        name="passwordLength"
-        class="slider"
-        [max]="maxPasswordLength"
-        step="1"
-        (input)="updateLength($event)"
-        [value]="passwordLength"
-      />
+
+      <div class="slider-container">
+        <input
+          type="range"
+          class="slider"
+          [max]="maxPasswordLength"
+          [value]="passwordLength"
+          (input)="updateLength($event)"
+        />
+        <div class="slider-track" [style.width.%]="getPercentage()"></div>
+      </div>
     </div>
 
     <div class="setting-container">
@@ -59,19 +60,19 @@
     <div class="btn-strength">
       <p class="gray-color">STRENGTH</p>
       <p>
-        <span *ngIf="getStrength() === 'Too Weak'" class="tooweak-color">
-          TOO WEAK <span class="tooweak-bar"></span><span ></span><span class="empty-bar"></span><span class="empty-bar"></span><span class="empty-bar"></span>
+        <span *ngIf="getStrength() === 'Too Weak'" class="span-cont">
+          <p class="strengthp">TOO WEAK </p><span class="tooweak-bar"></span><span ></span><span class="empty-bar"></span><span class="empty-bar"></span><span class="empty-bar"></span>
         </span>
-        <span *ngIf="getStrength() === 'Weak'">
-          WEAK <span class="weak-bar"></span><span class="weak-bar"></span><span class="empty-bar"></span><span class="empty-bar"></span>
+        <span *ngIf="getStrength() === 'Weak'" class="span-cont">
+          <p class="strengthp">WEAK </p><span class="weak-bar"></span><span class="weak-bar"></span><span class="empty-bar"></span><span class="empty-bar"></span>
         </span>
-        <span *ngIf="getStrength() === 'Medium'" class="medium-color">
-          MEDIUM <span class="medium-bar"></span><span class="medium-bar"></span><span class="medium-bar"></span><span class="empty-bar"></span>
+        <span *ngIf="getStrength() === 'Medium'" class="span-cont">
+          <p class="strengthp">MEDIUM </p><span class="medium-bar"></span><span class="medium-bar"></span><span class="medium-bar"></span><span class="empty-bar"></span>
         </span>
         <!-- structural directive -->
         <ng-container *ngIf="getStrength() === 'Strong' || getStrength() === ''">
-          <span *ngIf="getStrength() === 'Strong'" class="strong-color">
-            STRONG <span class="strong-bar"></span><span class="strong-bar"></span><span class="strong-bar"></span><span class="strong-bar"></span>
+          <span *ngIf="getStrength() === 'Strong'" class="span-cont">
+            <p class="strengthp">STRONG </p><span class="strong-bar"></span><span class="strong-bar"></span><span class="strong-bar"></span><span class="strong-bar"></span>
           </span>
           <span class="empty-bar" *ngIf="getStrength() !== 'Strong'"></span><span class="empty-bar" *ngIf="getStrength() !== 'Strong'"></span><span class="empty-bar" *ngIf="getStrength() !== 'Strong'"></span><span class="empty-bar" *ngIf="getStrength() !== 'Strong'"></span>
         </ng-container>
@@ -89,6 +90,3 @@
   </div>
 
 </div>
-
-
-
