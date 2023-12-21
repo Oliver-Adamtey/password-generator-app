@@ -3,7 +3,6 @@
     text-align: center;
     color: #817D92;
 }
-
 .result-container {
     width: 500px;
     background:  #24232c;
@@ -14,41 +13,34 @@
     margin: 20px;
     padding: 10px;
 }
-
 .result-field input{
     font-size: 30px;
     background: none;
     border: none;
     color: #E6E5EA;
 }
-
 .copied-message{
     margin-top: 10px;
     padding-right: 5px;
     color: #a4ffaf;
     font-size: 13px;
 }
-
 .btn-copy{
     background: none;
     border: none;
     cursor: pointer;
 }
-
 .btn-copy:hover img.copy-icon {
     filter: brightness(9.8);
 }
-
 .settings-container {
     padding: 20px;
     background:  #24232c;
 }
-
 .length-range{
     display: flex;
     justify-content: space-between;
 }
-
 .length-title{
     font-size: 18px;
     color: #E6E5EA;
@@ -58,11 +50,10 @@
     font-size: 32px;
     color: #a4ffaf;
 }
-
 .slider-container {
     position: relative;
     width: 97%;
-  }
+}
 .slider{
     width: 100%;
     height: 8px;
@@ -78,8 +69,7 @@
     border-radius: 50%;
     position: relative;
     z-index: 2; 
-}
-  
+}  
 .slider:hover::-webkit-slider-thumb {
     background: #18171F;
     border: 1.5px solid #a4ffaf;
@@ -93,17 +83,14 @@
     top: 9px;
     left: 0;
 }
-
 .setting-container{
     margin-top: 15px;
 }
-
 .setting {
     height: 32px;
     cursor: pointer;
     color: #E6E5EA;
 }
-
 label{
     margin: 13px;
 }
@@ -113,7 +100,6 @@ input {
     background-color: #E6E5EA;
     cursor: pointer;
 }
-
 input[type='checkbox'] {
     -webkit-appearance: none;
     appearance: none;
@@ -123,11 +109,9 @@ input[type='checkbox'] {
     cursor: pointer;
     border: 1.5px solid #E6E5EA;
 }
-
 input[type='checkbox']:hover{
     border: 1.5px #a4ffaf solid;
 }
-
 input[type='checkbox']:checked {
     background-color: #a4ffaf;
     background-image: url('../assets/images/icon-check.svg');
@@ -135,7 +119,6 @@ input[type='checkbox']:checked {
     background-position: center;
     border: none;
 }
-
 .btn-strength{
     display: flex;
     justify-content: space-between;
@@ -145,15 +128,12 @@ input[type='checkbox']:checked {
     border: none;
     margin: 15px 0 15px 0;
 }
-
 .btn-strength p{
     color: #E6E5EA;
 }
-
 .btn-strength .gray-color{
     color: #817D92;
 }
-
 .tooweak-bar {
     width: 8px;
     height: 20px;
@@ -177,8 +157,7 @@ input[type='checkbox']:checked {
     border: 1.5px #f8cd65 solid;
     display: inline-block;
     margin-right: 5px;
-}
-  
+}  
 .strong-bar {
     width: 8px;
     height: 20px;
@@ -186,8 +165,7 @@ input[type='checkbox']:checked {
     border: 1.5px #a4ffaf solid;
     display: inline-block;
     margin-right: 5px;
-}
-  
+}  
 .empty-bar {
     width: 8px;
     height: 20px;
@@ -195,8 +173,6 @@ input[type='checkbox']:checked {
     display: inline-block;
     margin-right: 5px;
 }
-  
-
 .btn-generate-pss{
     width: 100%;
     height: 65px;
@@ -205,31 +181,22 @@ input[type='checkbox']:checked {
     cursor: pointer; 
     font-weight: 800;
 }
-
 .btn-generate-pss:hover {
     background-color: #24232c;
     color: #a4ffaf;
     border: 1px #a4ffaf solid;
 }
-
 .arrow-right{
     margin-left: 8px;
 }
-
 .btn-generate-pss:hover img{
     filter: brightness(9.8);
 }
-
 .error-message{
     text-align: center;
     color: #f64a4a;
     font-size: 11px;
 }
-
-
-
-/* CSS for tablets */
-
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .title{
         font-size: 18px;
@@ -279,9 +246,6 @@ input[type='checkbox']:checked {
         height: 44px;
     }
 }
-  
-/* CSS for laptops */
-
 @media only screen and (min-width: 1024px){
     .title{
         font-size: 18px;
@@ -332,8 +296,6 @@ input[type='checkbox']:checked {
         height: 60px;
     }
   }
-  
-/* CSS for mobiles */
 @media only screen and (max-width: 767px) {
     .title{
         font-size: 14px;
