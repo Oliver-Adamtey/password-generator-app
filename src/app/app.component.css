@@ -7,8 +7,6 @@
     background:  #24232c;
 }
 .result-field{
-    display: flex;
-    justify-content: space-between;
     margin: 20px;
     padding: 10px;
 }
@@ -19,7 +17,6 @@
     color: #E6E5EA;
 }
 .copied-message{
-    margin-top: 10px;
     padding-right: 5px;
     color: #a4ffaf;
     font-size: 13px;
@@ -72,7 +69,6 @@
 .slider:hover::-webkit-slider-thumb {
     background: #18171F;
     border: 1.5px solid #a4ffaf;
-    -webkit-appearance: none;
 }
 .slider-track {
     position: absolute;
@@ -93,14 +89,7 @@
 label{
     margin: 13px;
 }
-input {
-    outline: none;
-    border: none;
-    background-color: #E6E5EA;
-    cursor: pointer;
-}
 input[type='checkbox'] {
-    -webkit-appearance: none;
     appearance: none;
     width: 20px;
     height: 20px;
@@ -137,7 +126,7 @@ input[type='checkbox']:checked {
     width: 8px;
     height: 20px;
     background-color: #f64a4a;
-    border: 1.5px #f64a4a solid;
+    border: none;
     display: inline-block;
     margin-right: 5px;
 }
@@ -145,7 +134,7 @@ input[type='checkbox']:checked {
     width: 8px;
     height: 20px;
     background-color: #fb7658; 
-    border: 1.5px #fb7658 solid;
+    border: none;
     display: inline-block;
     margin-right: 5px;
 }
@@ -153,7 +142,7 @@ input[type='checkbox']:checked {
     width: 8px;
     height: 20px;
     background-color: #f8cd65; 
-    border: 1.5px #f8cd65 solid;
+    border: none;
     display: inline-block;
     margin-right: 5px;
 }  
@@ -161,7 +150,7 @@ input[type='checkbox']:checked {
     width: 8px;
     height: 20px;
     background-color: #a4ffaf;
-    border: 1.5px #a4ffaf solid;
+    border: none;
     display: inline-block;
     margin-right: 5px;
 }  
@@ -199,11 +188,6 @@ input[type='checkbox']:checked {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .title{
         font-size: 18px;
-    }
-    .result-container{
-      width: 100%; 
-      margin-left: auto;
-      margin-right: auto;
     }
     .result-field{
         margin: 20px;
@@ -249,21 +233,11 @@ input[type='checkbox']:checked {
     .title{
         font-size: 18px;
     }
-    .result-container{
-      width: 100%; 
-      margin-left: auto;
-      margin-right: auto;
-    }
     .result-field{
         margin: 20px;
         font-size: 24px;
         margin: 10px;
         padding: 10px;
-    }
-    .container{
-        margin: 20px;
-        margin-left: auto;
-        margin-right: auto;
     }
     .length-title{
         font-size: 18px;
@@ -273,7 +247,6 @@ input[type='checkbox']:checked {
         height: 72px;
         margin: 10px 10px 15px 0;
     }
-
     .span-cont{
         display: flex;
         justify-content: space-around;
@@ -282,7 +255,6 @@ input[type='checkbox']:checked {
        margin: -22px;
         margin-right: -5px;
     }
-    
     .btn-strength p{
         padding: 19px;
         font-size: 23px;
@@ -299,19 +271,11 @@ input[type='checkbox']:checked {
     .title{
         font-size: 14px;
     }
-    .result-container{
-      width: 100%; 
-      margin-left: auto;
-      margin-right: auto;
-    }
-   
     .result-field input{
         font-size: 20px;
     }
-    .container{
-        margin: 20px;
-        margin-left: auto;
-        margin-right: auto;
+    .result-field{
+        margin: 10px;
     }
     .length-title{
         font-size: 14px;
