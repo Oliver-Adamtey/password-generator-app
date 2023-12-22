@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import {Clipboard} from '@angular/cdk/clipboard';
+// import { PasswordFieldComponent } from './password-field/password-field.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -46,7 +47,6 @@ export class AppComponent {
     }
   }
 
-  //OUTSIDE
   getPercentage(): number {
     const value = this.passwordLength;
     const max = this.maxPasswordLength;
