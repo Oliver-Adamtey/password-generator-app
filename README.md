@@ -1,4 +1,3 @@
-
 # Password Generator App
 
 This is an Angular-based password generator application designed to create strong and secure passwords based on user-defined criteria.
