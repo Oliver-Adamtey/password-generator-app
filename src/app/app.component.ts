@@ -76,20 +76,39 @@ export class AppComponent {
   }
 
   // Strength Logics
-  getStrength(): string {
-    const length = this.password.length;
-    if (length >= 1 && length <= 5) {
+  // getStrength(): string {
+  //   const length = this.password.length;
+  //   if (length >= 1 && length <= 5) {
+  //     return 'Too Weak';
+  //   } else if (length > 5 && length <= 9) {
+  //     return 'Weak';
+  //   } else if (length > 9 && length <= 15) {
+  //     return 'Medium';
+  //   } else if (length > 15 && length <= 20) {
+  //     return 'Strong';
+  //   } else {
+  //     return '';
+  //   }
+  // }
+
+  calculateEffectiveStrength(): string {
+    const selectedCheckboxes = [this.useUppercaseLetters, this.useLowercaseLetters, this.useNumbers, this.useSymbols].filter(Boolean).length;
+    const length = this.passwordLength;
+  
+    if (length >= 1 && length <= 5 && selectedCheckboxes === 1) {
       return 'Too Weak';
-    } else if (length > 5 && length <= 9) {
+    } else if (length > 5 && length <= 9 && selectedCheckboxes >= 2) {
       return 'Weak';
-    } else if (length > 9 && length <= 15) {
+    } else if (length > 9 && length <= 15 && selectedCheckboxes >= 3) {
       return 'Medium';
-    } else if (length > 15 && length <= 20) {
+    } else if (length > 15 && length <= 20 && selectedCheckboxes === 4) {
       return 'Strong';
     } else {
       return '';
     }
   }
+  
+
 
   // Generating Button
   showErrorMessage: boolean = false;
