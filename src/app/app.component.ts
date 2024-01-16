@@ -109,7 +109,36 @@ export class AppComponent {
   //   }
   // }
   
-  
+  // Add new properties to your class
+passwordGenerated: boolean = false;
+currentStrength: string = '';
+
+// Update the generatePassword() function
+generatPassword() {
+  // ... (your existing code)
+
+  // Update the currentStrength based on the selected checkboxes and length
+  this.currentStrength = this.calculateEffectiveStrength();
+}
+
+// Update the calculateEffectiveStrength() function
+calculateEffectiveStrength(): string {
+  const selectedCheckboxes = [this.useUppercaseLetters, this.useLowercaseLetters, this.useNumbers, this.useSymbols].filter(Boolean).length;
+  const length = this.passwordLength;
+
+  if (length >= 1 && length <= 5 && selectedCheckboxes === 1) {
+    return 'Too Weak';
+  } else if (length > 5 && length <= 9 && selectedCheckboxes >= 2) {
+    return 'Weak';
+  } else if (length > 9 && length <= 15 && selectedCheckboxes >= 3) {
+    return 'Medium';
+  } else if (length > 15 && length <= 20 && selectedCheckboxes === 4) {
+    return 'Strong';
+  } else {
+    return '';
+  }
+}
+
 
   // Generating Button
   showErrorMessage: boolean = false;
