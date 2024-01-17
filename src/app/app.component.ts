@@ -144,24 +144,6 @@ export class AppComponent {
     return '';
   }
   
-
-// calculateEffectiveStrength(): string {
-//   const selectedCheckboxes = [this.useUppercaseLetters, this.useLowercaseLetters, this.useNumbers, this.useSymbols].filter(Boolean).length;
-//   const length = this.passwordLength;
-
-//   if (length >= 1 && length <= 20) {
-//     if (selectedCheckboxes === 1) {
-//       return 'Too Weak';
-//     } else if (selectedCheckboxes === 2) {
-//       return 'Weak';
-//     } else if (selectedCheckboxes === 3) {
-//       return 'Medium';
-//     } else if (selectedCheckboxes === 4) {
-//         return 'Strong';
-//     }
-//   }
-//   return '';
-// }
   // Generating Button
   showErrorMessage: boolean = false;
   generatePassword() {
