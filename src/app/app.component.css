@@ -9,6 +9,9 @@
 .result-field{
     margin: 20px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 .result-field input{
     font-size: 30px;
@@ -18,10 +21,12 @@
 }
 .copied-container {
     position: absolute;
-    top: 31.5%;
-    left: 69%;
+    top: 48%;
+    left: 86%;
     transform: translate(-50%, -50%);
     white-space: nowrap; 
+    display: flex;
+    align-items: center;
 }
 
 .copied-message {
@@ -204,6 +209,7 @@ input[type='checkbox']:checked {
         margin: 10px;
         padding: 10px;
     }
+  
     .container{
         margin: 20px;
         margin-left: auto;
