@@ -118,25 +118,25 @@ export class AppComponent {
     if (length >= 1 && length <= 20) {
       if (selectedCheckboxes === 1) {
         return 'Too Weak';
-      } else if (selectedCheckboxes === 2 && length >= 1 && length <= 5) {
+      } else if (selectedCheckboxes === 2 && length >= 1 && length <= 7) {
         return 'Too Weak';
-      } else if (selectedCheckboxes === 2 && length > 5 && length <= 7) {
+      } else if (selectedCheckboxes === 2 && length > 7 && length <= 20) {
         return 'Weak';
       } else if (selectedCheckboxes === 3 && length >= 1 && length <= 8) {
         return 'Too Weak';
       } else if (selectedCheckboxes === 3 && length > 8 && length <= 10) {
         return 'Weak';
-      } else if (selectedCheckboxes === 3 && length > 8 && length <= 15) {
+      } else if (selectedCheckboxes === 3 && length > 8 && length <= 20) {
         return 'Medium';
       } else if (selectedCheckboxes === 4 && length >= 1 && length <= 7) {
         return 'Too Weak';
-      } else if (selectedCheckboxes === 4 && length > 8 && length <= 11) {
+      } else if (selectedCheckboxes === 4 && length > 7 && length <= 10) {
         return 'Weak';
-      } else if (selectedCheckboxes === 4 && length > 8 && length <= 14) {
-        if (length >= 10) {
-          return 'Medium';
-        } else {
+      } else if (selectedCheckboxes === 4 && length > 10 && length <= 20) {
+        if (length >= 14) {
           return 'Strong';
+        } else {
+          return 'Medium';
         }
       }
     }
