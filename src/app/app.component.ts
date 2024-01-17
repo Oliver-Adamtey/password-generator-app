@@ -140,7 +140,6 @@ export class AppComponent {
         }
       }
     }
-  
     return '';
   }
   
