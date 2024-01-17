@@ -111,29 +111,57 @@ export class AppComponent {
   
 
 
-calculateEffectiveStrength(): string {
-  const selectedCheckboxes = [this.useUppercaseLetters, this.useLowercaseLetters, this.useNumbers, this.useSymbols].filter(Boolean).length;
-  const length = this.passwordLength;
-
-  if (length >= 1 && length <= 20) {
-    if (selectedCheckboxes === 1) {
-      return 'Too Weak';
-    } else if (selectedCheckboxes === 2) {
-      return 'Weak';
-    } else if (selectedCheckboxes === 3) {
-      return 'Medium';
-    } else if (selectedCheckboxes === 4) {
-        return 'Strong';
+  calculateEffectiveStrength(): string {
+    const selectedCheckboxes = [this.useUppercaseLetters, this.useLowercaseLetters, this.useNumbers, this.useSymbols].filter(Boolean).length;
+    const length = this.passwordLength;
+  
+    if (length >= 1 && length <= 20) {
+      if (selectedCheckboxes === 1) {
+        return 'Too Weak';
+      } else if (selectedCheckboxes === 2 && length >= 1 && length <= 5) {
+        return 'Too Weak';
+      } else if (selectedCheckboxes === 2 && length > 5 && length <= 7) {
+        return 'Weak';
+      } else if (selectedCheckboxes === 3 && length >= 1 && length <= 8) {
+        return 'Too Weak';
+      } else if (selectedCheckboxes === 3 && length > 8 && length <= 10) {
+        return 'Weak';
+      } else if (selectedCheckboxes === 3 && length > 8 && length <= 15) {
+        return 'Medium';
+      } else if (selectedCheckboxes === 4 && length >= 1 && length <= 7) {
+        return 'Too Weak';
+      } else if (selectedCheckboxes === 4 && length > 8 && length <= 11) {
+        return 'Weak';
+      } else if (selectedCheckboxes === 4 && length > 8 && length <= 14) {
+        if (length >= 10) {
+          return 'Medium';
+        } else {
+          return 'Strong';
+        }
+      }
     }
+  
+    return '';
   }
-  return '';
-}
+  
 
+// calculateEffectiveStrength(): string {
+//   const selectedCheckboxes = [this.useUppercaseLetters, this.useLowercaseLetters, this.useNumbers, this.useSymbols].filter(Boolean).length;
+//   const length = this.passwordLength;
 
-
-
-
-
+//   if (length >= 1 && length <= 20) {
+//     if (selectedCheckboxes === 1) {
+//       return 'Too Weak';
+//     } else if (selectedCheckboxes === 2) {
+//       return 'Weak';
+//     } else if (selectedCheckboxes === 3) {
+//       return 'Medium';
+//     } else if (selectedCheckboxes === 4) {
+//         return 'Strong';
+//     }
+//   }
+//   return '';
+// }
   // Generating Button
   showErrorMessage: boolean = false;
   generatePassword() {
