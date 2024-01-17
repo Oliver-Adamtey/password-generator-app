@@ -16,11 +16,20 @@
     border: none;
     color: #E6E5EA;
 }
-.copied-message{
-    padding: 15px;
+.copied-container {
+    position: absolute;
+    top: 31.5%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; 
+}
+
+.copied-message {
+    padding: 5px;
     color: #a4ffaf;
     font-size: 13px;
 }
+
 .btn-copy{
     background: none;
     border: none;
